@@ -1,0 +1,191 @@
+:root {
+  --primary: #0d2c40;
+  --accent: #00bfa6;
+  --text: #000000;
+  --bg: #f9f9f9;
+  --radius: 0.5rem;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.6rem;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.top-bar {
+  background: rgb(44, 44, 99);
+  color: white;
+  font-size: 1.4rem;
+  padding: 1rem 0;
+}
+
+.contact-info {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.social-icons {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar {
+  background: white;
+  padding: 1rem 0;
+}
+
+.logo {
+  width: 4rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.hero {
+  background: url('https://static.vecteezy.com/system/resources/previews/020/285/550/large_2x/blurred-background-business-office-interior-with-desks-of-computers-business-background-free-photo.jpg') 
+    no-repeat top center/cover;
+  padding: 8rem 0;
+  color: white;
+}
+
+.hero-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.text {
+  max-width: 50%;
+}
+
+.text h1 {
+  font-size: 4.4rem;
+  margin-bottom: 2rem;
+}
+
+.text .btn {
+  background: var(--accent);
+  padding: 1rem 2.5rem;
+  border-radius: 20px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+.form-card {
+  background: white;
+  padding: 3rem;
+  border-radius: 10px;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 320px;
+  color: black;
+}
+
+.form-card input[type="text"],
+.form-card input[type="email"] {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+.apply-btn {
+  background: black;
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.services {
+  background: white;
+  padding: 6rem 0;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.service {
+  flex: 1;
+  padding: 2rem;
+  min-width: 25rem;
+}
+
+.service .icon img {
+  width: 4rem;
+  margin-bottom: 1rem;
+}
+
+.service h4 {
+  margin: 1rem 0;
+  font-size: 2rem;
+}
+
+.service p {
+  font-size: 1.4rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .text, .form-card {
+    max-width: 100%;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-info, .social-icons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+}
